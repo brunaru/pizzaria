@@ -12,6 +12,8 @@ public class Pedido {
 	private boolean aberto;
 	
 	private List<ItemPedido> itemPedidos = new ArrayList<>();
+	
+	private Mesa mesa;
 
 	public double getValorTotal() {
 		return valorTotal;
@@ -43,6 +45,14 @@ public class Pedido {
 
 	public void setItemPedidos(List<ItemPedido> itemPedidos) {
 		this.itemPedidos = itemPedidos;
+	}
+
+	public Mesa getMesa() {
+		return mesa;
+	}
+
+	public void setMesa(Mesa mesa) {
+		this.mesa = mesa;
 	}
 
 }
